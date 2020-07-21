@@ -1,0 +1,53 @@
+body {
+    
+    background-color: lightblue;
+    background-image: url(back.png); 
+    color:gray; 
+    border-style: solid;
+    border-right-color: orange;
+}
+/* the above gives it gray the below center aligns the text, multiple html elements can be selected.*/
+header, main, nav, footer {
+    text-align: center;
+}
+
+nav a { /*links within "nav" container, nav a makes it only for the navigation menu and not ALL links */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none;  /*removes underline*/
+    color: white;           /*by default links are blue*/
+    
+}
+
+nav a:hover { /*psuedo class*/
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: .9; /*transition effect*/
+    
+}
+
+main { /* Make text to the right of your photo instead of underneath and center it*/
+    display: flex;
+    justify-content: center;
+}
+
+#paragraph {
+         font-size: 22px;
+}
+
+footer { /* Change footer text size and color*/
+ font-size: 10px;
+ color: black;
+}
+
+.current {
+  color: orange;  /* Special color for link of home page */
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+

@@ -1,0 +1,45 @@
+<%- include('partials/header.ejs') %>
+
+    <head> <!-- appears at top of site-->
+        <meta charset ="utf-8" />
+        <title> Active Directory Domain & Trusts
+        </title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <!--Linking to webpage with CSS file, rel is stylesheet value, type no longer required since stylesheets text.-->
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body> <!--You can add a style to this but discouraged-->
+        <header>
+            <h1> Domain & Trusts </h1> <!-- headings get smaller as number gets higher-->
+            </header>
+            <hr /> <!-- defines a content change by a horizontal rule-->
+            
+            <br /><br /> <!-- Line break -->
+            
+            <main> <!-- main content -->
+                <figure> <!-- includes an image -->
+                    <img src="img/dtrusts.png" alt="AD" />
+                </figure>
+                
+                <div id = paragraph> <!-- defines container -->
+                    <b>Active Directory Domains & Trusts: </b><br /> 
+                    <p> Active Directory domains and trusts is used to manage domain trusts, 
+                    domain and handle forest functional levels. A trust is a relationship 
+                    that is established for domains. Trusts allow for the ability for a user
+                    in the domain to be authenticated by another domain.  </p> <!-- paragraph -->
+                    <br /><br />
+                    
+                    <hr style="border: 2px solid blue;" />
+                    <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-the-active-directory-logical-model/">Source</a>
+                </div>
+            </main>
+        
+    </body>
+    <!-- closing body -->
+</html>
+
+<%- include('partials/footer.ejs') %>

@@ -1,0 +1,48 @@
+<%- include('partials/header.ejs') %>
+
+<!-- This is the head --> 
+<!-- All styles and javascript go inside the head -->
+    <head> <!-- appears at top of site-->
+        <meta charset ="utf-8" />
+        <title> Active Directory Automation
+        </title>
+        <link href="css/styles.css" rel="stylesheet" type="text/css" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <!--Linking to webpage with CSS file, rel is stylesheet value, type no longer required since stylesheets text.-->
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body> <!--You can add a style to this but discouraged-->
+        <header>
+            <h1> Active Directory Automation: Powershell </h1> <!-- headings get smaller as number gets higher-->
+            </header>
+            <hr /> <!-- defines a content change by a horizontal rule-->
+           
+            <br /><br /> <!-- Line break -->
+            
+            <main> <!-- main content -->
+                <figure> <!-- includes an image -->
+                    <img src="img/powershell.png" alt = "ad" />
+                </figure>
+                
+                <div id = paragraph> <!-- defines container -->
+                    <b>Active Directory Automation with Powershell:</b><br /> 
+                    <p> Active Directory automation can be used be performed by different
+                    scripting languages. The one we will assess is powershell. Powershell is 
+                    a powerful language to automate repetetive active directory tasks that
+                    would have normally been done manually. Manual task completion proves time consuming
+                    and automation is the way to go. Powershell is a powerful task automation framework
+                    by Microsoft. </p> <!-- paragraph -->
+                    <br /><br />
+                    
+                    <hr style="border: 2px solid blue;" />
+                    <a href="https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/understanding-the-active-directory-logical-model/">Source</a>
+                </div>
+            </main>
+    </body>
+    <!-- closing body -->
+</html>
+
+<%- include('partials/footer.ejs') %>
